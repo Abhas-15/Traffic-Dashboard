@@ -1,9 +1,13 @@
-import './App.css'
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-        Subscribe Zainkeepscode
+      <div className="AppGlass">
+        {/* <Sidebar />
+        <MainDash />
+        <RightSide /> */}
+      </div>
     </div>
   );
 }
