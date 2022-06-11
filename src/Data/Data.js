@@ -54,7 +54,7 @@ export const cardsData = [
     png: UilChart,
     series: [
       {
-        name: "Sales",
+        name: "Traffic",
         data: [31, 40, 28, 51, 42, 109, 100],
       },
     ],
@@ -70,7 +70,7 @@ export const cardsData = [
     png: UilChart,
     series: [
       {
-        name: "Revenue",
+        name: "Accidents",
         data: [10, 100, 50, 70, 80, 30, 40],
       },
     ],
@@ -87,7 +87,7 @@ export const cardsData = [
     png: UilChart,
     series: [
       {
-        name: "Expenses",
+        name: "Deaths",
         data: [10, 25, 15, 30, 12, 15, 20],
       },
     ],
