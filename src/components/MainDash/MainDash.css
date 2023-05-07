@@ -1,5 +1,8 @@
 .MainDash{
     /* padding-top: 1rem; */
+    padding-left: 20rem;
+    padding-top: 1rem;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

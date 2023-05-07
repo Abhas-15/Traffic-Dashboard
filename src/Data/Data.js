@@ -22,10 +22,14 @@ export const SidebarData = [
   {
     icon: UilEstate,
     heading: "Traffic Issues",
+    route: "/tweets",
+    target: "_blank"
   },
   {
     icon: UilClipboardAlt,
     heading: "Week's Slowest Roads",
+    route: "/tweets",
+    target: "_blank"
   },
   // {
   //   icon: UilUsersAlt,
@@ -38,7 +42,21 @@ export const SidebarData = [
   {
     icon: UilChart,
     heading: "Accident Statistics",
+    route: "/tweets",
+    target: "_blank"
   },
+  {
+    icon: UilChart,
+    heading: "tweets",
+    route: "/tweets",
+    target: "_blank"
+  },
+  {
+    icon: UilChart,
+    heading: "rules",
+    route: "/rules",
+    target: "_blank"
+  }
 ];
 
 // Analytics Cards Data
