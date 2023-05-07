@@ -9,6 +9,7 @@ const MainDash = () => {
       <h1>Dashboard</h1>
       <Cards />
       <Table />
+      
       {/* <Tweet /> */}
     </div>
   );

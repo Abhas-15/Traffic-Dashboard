@@ -35,17 +35,17 @@ function CompactCard({ param, setExpanded }) {
       onClick={setExpanded}
     >
       <div className="radialBar">
-        <CircularProgressbar
+        {/* <CircularProgressbar
           value={param.barValue}
           text={`${param.barValue}%`}
-        />
-        <span>{param.title}</span>
+        /> */}
+        <span style={{position:"relative", bottom:"40px"}}>{param.title}</span>
       </div>
       <div className="detail">
         <Png />
         <span>{param.value}</span>
         {/* <span>{param.unit}</span> */}
-        <span>Last 1 Year</span>
+        <span></span>
       </div>
     </motion.div>
   );
@@ -92,13 +92,13 @@ function ExpandedCard({ param, setExpanded }) {
       xaxis: {
         type: "datetime",
         categories: [
-          "2018-09-19T00:00:00.000Z",
-          "2018-09-19T01:30:00.000Z",
-          "2018-09-19T02:30:00.000Z",
-          "2018-09-19T03:30:00.000Z",
-          "2018-09-19T04:30:00.000Z",
-          "2018-09-19T05:30:00.000Z",
-          "2018-09-19T06:30:00.000Z",
+          "2018-09-19T10:00:00.000Z",
+          "2018-09-19T11:30:00.000Z",
+          "2018-09-19T12:30:00.000Z",
+          "2018-09-19T13:30:00.000Z",
+          "2018-09-19T14:30:00.000Z",
+          "2018-09-19T15:30:00.000Z",
+          "2018-09-19T16:30:00.000Z",
         ],
       },
     },
