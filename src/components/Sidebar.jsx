@@ -6,9 +6,11 @@ import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
+  const navigate = useNavigate();
 
   const [expanded, setExpaned] = useState(true);
 
@@ -39,26 +41,35 @@ const Sidebar = () => {
         <div className="logo">
           <img src={Logo} alt="logo" />
           <span>
-            Tra<span>f</span>fic
+            Anomaly <br /><span>T</span>racker
           </span>
         </div>
 
         <div className="menu">
           {SidebarData.map((item, index) => {
             return (
-              <NavLink
-                to={item.route} target={item.target} className={selected === index ? "menuItem active" : "menuItem"}
+              <div
+                className={selected === index ? "menuItem active" : "menuItem"}
                 key={index}
-                onClick={() => setSelected(index)}
+                onClick={() => {
+                    setSelected(index);
+                    if(index == 1){
+                      navigate("/roads");
+                    }else{
+                      navigate("/");
+                    }
+                    
+                  }
+                }
               >
                 <item.icon />
                 <span>{item.heading}</span>
-              </NavLink>
+              </div>
             );
           })}
           {/* signoutIcon */}
           <div className="menuItem">
-            <UilSignOutAlt />
+            {/* <UilSignOutAlt /> */}
           </div>
         </div>
       </motion.div>

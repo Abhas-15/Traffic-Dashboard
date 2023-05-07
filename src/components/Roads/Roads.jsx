@@ -6,17 +6,15 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import "./Table.css";
+import "./Roads.css";
 
 function createData(name, trackingId, date, status) {
   return { name, trackingId, date, status };
 }
 
 const rows = [
-  createData("Whitefield-Hosur Road", 18908424, "12 Jan 2020"),
-  createData("MG Road-Sarjapur Road", 18908422, "12 Jan 2020"),
-  createData("LBS Nagar-Koramangala Road", 18908423, "12 Jan 2020"),
-  createData("Sarjapur Road-LBS Nagar Road", 18908421, "12 Jan 2020"),
+  createData("Airport Road-Outer Ring Road Road", 18908424, "12 Jan 2020"),
+  createData("MG Road-Koramangala Road", 18908423, "12 Jan 2020"),
 ];
 
 const makeStyle = (status) => {
@@ -40,13 +38,12 @@ const makeStyle = (status) => {
 
 export default function BasicTable() {
   return (
-    <div className="Table">
-      <h3>Recent Congested Routes</h3>
+    <div className="Tab">
+      <h3>Week's Slowest Roads</h3>
       <TableContainer
         component={Paper}
         style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
       >
-      
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
